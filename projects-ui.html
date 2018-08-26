@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>RabbitWerks : Werks</title>
+  <link rel="stylesheet" href="vendor/css/font-awesome/css/all.css"> <!--font awesome icon set-->
+  <link rel="stylesheet" href="css/main-ui.css">
+  <link rel="stylesheet" href="css/media-queries.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#03a9ac">
+  <link rel="shortcut icon" href="favicon/favicon.ico">
+  <meta name="apple-mobile-web-app-title" content="RabbitWerks">
+  <meta name="application-name" content="RabbitWerks">
+  <meta name="msapplication-TileColor" content="#0a0a0a">
+  <meta name="msapplication-config" content="favicon/browserconfig.xml">
+  <meta name="theme-color" content="#0a0a0a">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="navbar-toggle">
+      <a href="index-ui.html"><img src="img/svg/rw-brand-nav.svg" alt="" id="navbar-brand"></a>
+    </div>
+    
+    <div class="navbar-collapse" >
+      <ul class="navbar-nav navbar-links" id="navbar-collapse">
+        <li class="nav-link"><a id="nav-home-link" href="index-ui.html">Burrow</a></li>
+        <li class="nav-link"><a id="nav-werks-link" href="#" class="current">Werks</a></li>
+        <li class="nav-link"><a id="nav-thoughts-link" href="#">Thoughts</a></li>
+      </ul>
+      <img src="img/svg/rabbitwerks-logo-transparent-1000px.svg" alt="" id="rw-logo-nav">
+    </div>
+  </div>
+
+  <div class="container werks">
+    <div class="werks-svgs">
+      <img src="img/svg/diag-tube-left.svg" alt="" id="diag-tube-left">
+      <img src="img/svg/mini-tubes.svg" alt="" id="mini-tubes-left">
+      <img src="img/svg/diag-tube-right.svg" alt="" id="diag-tube-right">
+      <img src="img/svg/mini-tubes.svg" alt="" id="mini-tubes-right">
+
+      <img src="img/svg/jsdev-tube.svg" alt="" id="header-tube">
+      <h1 id="header-tube-text">werks and scripts</h1>
+
+    </div>
+
+    <div class="projects">
+      <div class="project-list-group">        
+        <!--MUST REWORK ONLINE FILE TREE GET RID OF rabbitwerks and set up redirect
+          also rework links. and projects to have the navbar???
+        
+        -->
+          <ul class="list" id="apps-scripts">
+            <span class="list-header">Apps & Scripts</span>
+            <h5>more advanced apps and scripts that have been written for various projects</h5>
+            <li>
+              <a class="list-link" href="http://www.techtronixweb.com/rabbitWerks/infinite-looper/index.html">Infinite Looper JS</a>
+            </li>
+            
+            <li>
+              <a class="list-link" href="http://www.techtronixweb.com/rabbitWerks/chuck-norris-api/index.html">Chuck Norris Joke API</a>
+            </li>
+            
+            <li>
+              <a class="list-link" href="http://www.techtronixweb.com/rabbitWerks/canvas-bounce/index.html">HTML5 Canvas: Bounce</a>
+            </li>
+            
+            <li>
+              <a class="list-link" href="http://www.techtronixweb.com/rabbitwerks/rgbgame/index.html">RGB Guessing Game</a>
+            </li>
+            
+            
+          </ul>
+
+          <ul class="list" id="javascript30">
+            <span class="list-header">Javascript30</span>
+            <h5>adaptations from the Javascript30 online project series by Wes Bos</h5>
+            <li>
+              <a class="list-link" href="http://www.techtronixweb.com/rabbitWerks/javascript30/jsdrumkit">P-01 : jsDrumkit</a>
+            </li>
+            
+            <li>
+              <a class="list-link" href="http://www.techtronixweb.com/rabbitWerks/javascript30/jsclock">P-02 : jsCSS Clock</a>
+            </li>
+            
+            <li>
+              <a class="list-link" href="http://www.techtronixweb.com/rabbitwerks/javascript30/cssvars">P-03 : CSS Variables</a>
+            </li>
+            
+            <li>
+              <a class="list-link" href="http://www.techtronixweb.com/rabbitwerks/javascript30/arraycardioday1">P-04 : Array Cardio Day 1</a>
+            </li>
+            
+          </ul>
+
+          <ul class="list" id="jsbasics">
+            <span class="list-header">Js Basics</span>
+            <h5>simple apps that demostrate basic javascript functionality</h5>
+            <li>
+              <a href="http://www.techtronixweb.com/rabbitWerks/reverse-string/index.html" target="_blank" class="list-link">String Reversify</a>
+            </li>
+            <li>
+              <a href="http://www.techtronixweb.com/rabbitWerks/rna-transcriber/index.html" target="_blank" class="list-link">RNA Transcriber</a>
+            </li>
+            <li>
+              <a href="http://www.techtronixweb.com/rabbitWerks/geometry-it/index.html" target="_blank" class="list-link">GeometryIt!</a>
+            </li>
+                
+          </ul>
+
+      </div>
+    </div>
+  </div>
+  <script src="js/nav-collapse.js"></script>
+  <script src="js/animation-ui_projects-thoughts.js"></script>
+</body>
+</html>
