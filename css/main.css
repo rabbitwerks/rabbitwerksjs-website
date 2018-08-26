@@ -1,0 +1,74 @@
+.rabbit-icon {
+  height: 32px;
+}
+
+/*INFINITE LOOPER*/
+/*Can set to position: absolute and constomize placement. 
+      Wrapper boundaries are set by the image dimensions: 
+      Cutrrently set as relative margin center.
+    
+     */
+     #inf-loop-wrapper {
+      position: relative;
+      width: 500px;
+      height: 500px;
+    }
+    /* position absolute without top right bottom left props to stack on top of eachother in the same spot */
+    #inf-loop-wrapper img {
+      position: absolute;
+      transition: all 0.5s; /* <-- adjust fade time */
+    }
+    .iL-img {
+      opacity: 0; /* <-- initally set for 0 opacity */
+      border: 5px solid #00bc8c;
+    }
+    .iL-visible {
+      opacity: 1; /* <-- set opacity to 1 for current image */
+      border: 5px solid #fff;
+
+    }
+
+
+
+#burrow-header {
+  font-size: 800%;
+  margin-left: -1%;
+}
+#burrow-subheader {
+  text-align: right;
+  font-size: 362%;
+  margin-top: -2rem;
+}
+
+@media screen and (max-width: 480px) {
+
+  #inf-loop-wrapper {
+    position: relative;
+    width: 90%;
+    height: 338px;
+  }
+  /* position absolute without top right bottom left props to stack on top of eachother in the same spot */
+  #inf-loop-wrapper img {
+    width: 100%;
+    position: absolute;
+    transition: all 0.5s; /* <-- adjust fade time */
+  }
+
+
+
+
+
+
+  #burrow-header {
+    text-align: center;
+    font-size: 350%;
+    margin-left: 0%;
+  }
+  #burrow-subheader {
+    text-align: center;
+    font-size: 200%;
+    margin-top: -1.5rem;
+    margin-bottom: 1rem;
+    /* margin: -1.5rem 2.5% 1rem 0; */
+  }
+}

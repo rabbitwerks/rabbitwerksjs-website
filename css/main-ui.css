@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800');
+/* @import url('../vendor/import-fonts/Lemondrop.ttf'); */
+
+/*======== CSS VARIABLES ========*/
+:root {
+  --brightGreen: #00D6A4; /* for headings and current nav class */
+  --mainTurq: #03A9AC; /* for sub-headings and non-current nav class */
+  --darkTurq: #006473; /* for background objects and onClick effect */
+  --accTeal: #03D8CB; /* for background objects and onClick effect */
+  --backgroundGrey: #212121;
+  --navbarBlack: #0a0a0a;
+  --fontColor: #f7f7f7;
+
+  --animationDuration: 1.2s;
+
+}
+
+@font-face {
+  font-family: 'Lemondrop';
+  src: url('../vendor/import-fonts/lemondrop-webfontkit/lemondrop-webfont.eot');
+  src: url('../vendor/import-fonts/lemondrop-webfontkit/lemondrop-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../vendor/import-fonts/lemondrop-webfontkit/lemondrop-webfont.woff2') format('woff2'),
+       url('../vendor/import-fonts/lemondrop-webfontkit/lemondrop-webfont.woff') format('woff'),
+       url('../vendor/import-fonts/lemondrop-webfontkit/lemondrop-webfont.ttf') format('truetype'),
+       url('../vendor/import-fonts/lemondrop-webfontkit/lemondrop-webfont.svg#lemondropregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/**/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+html, body {
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  color: var(--fontColor);
+  line-height: 1.25;
+}
+
+body {
+  background-color: var(--backgroundGrey);
+  z-index: 10;
+
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  
+}
+
+.brand-font {
+  font-family: 'Lemondrop';
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: var(--navbarBlack);
+  z-index: 200;
+}
+
+#navbar-brand {
+  position: absolute;
+  top: 30%;
+  left: 1em;
+  width: 15%;
+  z-index: 300;
+}
+
+.navbar-links {
+  position: absolute;
+  right: 5%;
+  top: 30%;
+
+  list-style: none;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 0 1em;
+}
+.nav-link a {
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 110%;
+  color: var(--mainTurq);
+  
+}
+.nav-link a.current {
+  font-weight: 300;
+  color: var(--brightGreen);
+}
+.nav-link a:not(.current):hover {
+  color: var(--accTeal);
+}
+
+#rw-logo-nav {
+  position: absolute;
+  width: 50px;
+  top: 17%;
+  right: 1.5%;
+}
+
+.home {
+  position: relative;
+  margin-top: 0; 
+  display: flex;
+  height: 100%;
+  flex: 1;
+  transition: all 0.1s;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.home img {
+  position: absolute;
+}
+
+.brand-display {
+  position: absolute;
+  top: 43.5%;
+  left: 10%;
+  width: 100%;
+  height: auto;
+  z-index: 400;
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+#brand {
+  width: 80%;
+}
+#rw-logo-large {
+  display: none;
+  width: 80%;
+}
+
+ #diag-tube-left {
+  width: 50%;
+  bottom: 5%;
+  left: 10%;
+  z-index: 100;
+
+  transition: all ease-in-out;
+  transition-duration: var(--animationDuration);
+  
+}
+
+.home #mini-tubes-left {
+  width: 25%;
+  top: 25%;
+  left: 22%;
+  z-index: 200;
+  opacity: 0;
+  transition: all ease-in-out 1.0s;
+  /*initial load animation*/
+  animation: mtlFade 1s ease-in-out forwards;
+}
+
+.home #cta-svg {
+  font-family: 'Lemondrop';
+  width: 30%;
+  top: 72%;
+  left: 16.5%;
+  z-index: 300;
+  transition: transform ease-in 0.5s, opacity 1s;
+}
+
+#diag-tube-right {
+  width: 50%;
+  top: 15%;
+  right: 10.5%;
+  z-index: 100;
+  transition: all ease-in-out;
+  transition-duration: var(--animationDuration);
+}
+
+.home #mini-tubes-right {
+  width: 25%;
+  top: 74%;
+  right: 22.5%;
+  z-index: 200;
+  opacity: 0;
+  transition: all ease-in-out 1.0s;
+  /*initial load animation*/
+  animation: mtrFade 1s ease-in-out forwards;
+}
+
+.home #header-tube {
+  width: 43%;
+  top: 25%;
+  right: 3%;
+  z-index: 300;
+  transition: 1.0s;
+}
+.home #header-tube-text {
+  position: absolute;
+  top: 26%;
+  right: 6%;
+  z-index: 500;
+
+  font-size: 280%;
+  font-weight: 200;
+  text-align: center;
+
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.7);
+  transition: transform 1.0s, opacity 0.4s;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.werks {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.werks-svgs {
+  position: relative;
+  height: 100%;
+}
+
+.werks-svgs img {
+  position: absolute;
+}
+
+.werks-svgs #diag-tube-left {
+  top: -16%;
+  left: -20.75%; /*perfect*/
+
+
+  transition-timing-function: ease-in-out;
+  transform-origin: 80%;
+}
+
+.werks-svgs #diag-tube-right {
+  top: -5%;
+  right: -21.5% /*perfect*/
+}
+
+.werks-svgs #mini-tubes-left {
+  width: 25%;
+  top: 12%;
+  left: 1.25%;
+  z-index: 300;
+  opacity: 0;
+  transition: all 1s;
+  animation: mtrFade ease-in-out 1s forwards;
+}
+
+.werks-svgs #mini-tubes-right {
+  width: 25%;
+  top: 80%;
+  right: -.75%;
+  z-index: 300;
+  opacity: 0;
+  transition: all 1s;
+  animation: mtlFade ease-in-out 1s forwards;
+}
+
+.werks-svgs #header-tube {
+  width: 42.75%;
+  top: 17%;  /*perfect*/
+  right: 12.1%;
+  z-index: 300;
+  transition: all 1.2s;
+
+}
+.werks-svgs #header-tube-text {
+  position: absolute;
+  top: 18%;  /*perfect*/
+  right: 19.5%;
+  z-index: 500;
+
+  font-size: 280%;
+  font-weight: 200;
+  text-align: center;
+
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.7);
+  transition: transform 1.2s, opacity 0.4s;
+}
+
+.projects {
+  display: none;
+  position: absolute;
+  top: 35%;
+  z-index: 1000;
+
+  opacity: 0;
+  animation: fadeUp 0.8s ease-in-out forwards;
+  transition: all 0.4s ease-in-out;
+}
+
+.project-list-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline; /*align-items sets the list heights to auto based of list size?*/
+}
+
+.list {
+  width: 24%;
+  list-style: none;
+  margin: 0 1em;
+  padding: 1.25em 1.5em;
+  border-radius: 28px;
+}
+
+.list-header {
+  font-family: "Lemondrop";
+  font-size: 180%;
+  color: var(--mainTurq);
+}
+
+
+.list > h5 {
+  color: #cccccc;
+  line-height: 1;
+  font-weight: 200;
+  padding: .2em 0 .35em 1em;
+
+  margin: .5em 0 1em -.5em;
+  border-left: 5px solid var(--brightGreen);
+  border-bottom: 3px solid var(--brightGreen);
+  border-radius: 35px;
+}
+
+.list > li {
+  font-size: 125%;
+  font-weight: 200;
+  padding-left: .5em;
+  line-height: 1.35;
+}
+
+a.list-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.list-link:hover {
+  color: var(--accTeal);
+}
+
+
+
+
+
+
+
+
+
+.thoughts {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.thoughts-svgs {
+  position: relative;
+  height: 100%;
+  overflow: none;
+}
+
+.thoughts-svgs img {
+  position: absolute;
+}
+
+.thoughts-svgs #diag-tube-left {
+  top: 05%;
+  left: -18%; 
+  transform: rotate(120deg);
+  
+
+}
+
+.thoughts-svgs #diag-tube-right {
+  top: -15%;
+  right: -21.5%;
+  transform: rotate(-60deg);
+  transform-origin: 30%;
+}
+
+.thoughts-svgs #mini-tubes-left {
+  width: 25%;
+  bottom: 5%;
+  left: 1%;
+  z-index: 300;
+  opacity: 0;
+  animation: mtrLongFade ease-in-out 1s forwards;
+}
+
+.thoughts-svgs #mini-tubes-right {
+  width: 25%;
+  top: 10%;
+  right: 2%;
+  z-index: 300;
+  opacity: 0;
+  animation: mtlLongFade ease-in-out 1s forwards;
+}
+
+.thoughts-svgs #header-tube {
+  width: 42.75%;
+  top: 17%;  /*perfect*/
+  left: 12%;
+  z-index: 300;
+  transition: transform 1.0s;
+
+}
+.thoughts-svgs #header-tube-text {
+  position: absolute;
+  top: 18%;  /*perfect*/
+  left: 22.25%;
+  z-index: 500;
+
+  font-size: 280%;
+  font-weight: 200;
+  text-align: center;
+
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.7);
+
+
+}
+
+.thoughts-blog {
+  position: absolute;
+  top: 33%;
+}
+
+.blog-post {
+  position: relative;
+  
+  width: 80%;
+  margin: 0 auto 1em auto;
+  padding: 1.5em;
+  z-index: 1000;
+
+  background-color: #2D2D2D;
+  border-radius: 35px;
+  border: 3px solid var(--brightGreen);
+  opacity: 0;
+}
+
+.bp-anim {
+  animation: bpFade 0.5s ease-in-out forwards;
+}
+
+.post-extender {
+  position: absolute;
+  top: 17%;
+  left: 3%;
+  font-size: 180%;
+  z-index: 1000;
+}
+
+.post-extender i {
+  transition: all 0.2s ease-in;
+}
+
+.post-extender i:hover {
+  color: var(--brightGreen);
+}
+
+.post-header {
+  position: absolute;
+  height: 75px;
+  width: 90%;
+  top: 0;
+  left: 6%;
+  z-index: 1000;
+}
+.blog-post h2 {
+  display: inline-block;
+}
+
+
+.post-title {
+  position: absolute;
+}
+.pt-hide {
+  top: 20%;
+  left: 6%;
+}
+
+.pt-ext {
+  top: 3%;
+  left: 6%;
+}
+
+.sub-title {
+  font-weight: 200;
+  font-size: 80%;
+}
+
+.post-date {
+  position: absolute;
+}
+.pd-hide {
+  top: 20%;
+  right: 3%;
+}
+.pd-ext {
+  top: 3%;
+  right: 3%;
+}
+
+.pb-hide {
+  margin-top: 0;
+  height: 0px;
+  opacity: 0;
+  transition: 0.2s ease-in-out, opacity 0.0s;
+}
+
+.pb-ext {
+  margin-top: 3%;
+  height: inherit;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* mini-tubes-left animation */
+@keyframes mtlFade {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+/* mini-tubes-right animation */
+@keyframes mtrFade {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes mtlLongFade {
+  from {
+    transform: translateX(-150px);
+    opacity: 0;
+  }
+   to {
+    transform: translateX(0px);
+    opacity: 1;
+   }
+}
+
+@keyframes mtrLongFade {
+  from {
+    transform: translateX(150px);
+    opacity: 0;
+  }
+   to {
+    transform: translateX(0px);
+    opacity: 1;
+   }
+}
+
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes bpFade {
+  from {
+    opacity: 0;
+    transform: translateX(75px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
