@@ -35,7 +35,7 @@
     width: 100%;
     height: auto;
     background-color: transparent;
-    z-index: 200;
+    z-index: 2000;
   }
   .navbar-toggle {
     height: 60px;
@@ -46,7 +46,7 @@
     top: 30%;
     left: 1em;
     width: 70%;
-    z-index: 300;
+    z-index: 2300;
   }
 
   
@@ -61,12 +61,10 @@
     padding-left: .5em;
 
     z-index: 1500;
-    
-    height: 0;  /*set opend class on toggle*/
+
     transition: all 0.2s ease-in-out;
   }
   .navbar-opened {
-    height: auto;
     padding-top: .5em;
     padding-bottom: .5em;
     transition: all 0.2s ease-in-out;
@@ -137,7 +135,7 @@
   .brand-display {
     position: absolute;
     top: 8.5em;
-    left: 12.5%; /* 75% width*/
+    left: 12.5%;
     width: 100%;
     height: auto;
     z-index: 400;
@@ -205,9 +203,9 @@
   }
   
   .home #header-tube {
-    width: 82%;
+    width: 90%;
     top: 74%;
-    right: 9%;
+    right: 5%;
     z-index: 300;
     transition: 1.0s;
   }
@@ -217,7 +215,7 @@
     right: 0;
     z-index: 500;
     width: 100%;
-    font-size: 150%;
+    font-size: 170%;
     font-weight: 200;
     text-align: center;
   
@@ -236,6 +234,10 @@
   /*|...........................|*/
   /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 
+  .werks {
+    overflow-y: auto;
+    transition: all 0.1s ease-in-out;
+  }
 
   .werks-svgs #diag-tube-left {
     top: -16%;
@@ -249,9 +251,9 @@
   }
 
   .werks-svgs #mini-tubes-left {
-    width: 25%;
-    top: 12%;
-    left: 1.25%;
+    width: 85%;
+    top: 20%;
+    left: -10%;
     z-index: 300;
     opacity: 0;
     transition: all 1s;
@@ -259,8 +261,8 @@
   }
 
   .werks-svgs #mini-tubes-right {
-    width: 25%;
-    top: 80%;
+    width: 85%;
+    top: 100%;
     right: -.75%;
     z-index: 300;
     opacity: 0;
@@ -269,20 +271,21 @@
   }
 
   .werks-svgs #header-tube {
-    width: 42.75%;
-    top: 17%;  /*perfect*/
-    right: 12.1%;
+    width: 90%;
+    top: 15%;  
+    right: 5%;
     z-index: 300;
     transition: all 1.2s;
 
   }
   .werks-svgs #header-tube-text {
     position: absolute;
-    top: 18%;  /*perfect*/
-    right: 19.5%;
+    top: 14.8%;
+    right: 0;
+    width: 100%;
     z-index: 500;
 
-    font-size: 280%;
+    font-size: 210%;
     font-weight: 200;
     text-align: center;
 
@@ -292,13 +295,17 @@
   }
 
   .projects {
-    position: relative;
-    top: 35%;
+    position: absolute;
     z-index: 1000;
+    top: 28%;
 
     opacity: 0;
     animation: fadeUp 0.8s ease-in-out forwards;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .projects-adjust {
+    top: 55%;
   }
 
   .project-list-group {
@@ -311,11 +318,6 @@
   .list {
     width: 90%;
     list-style: none;
-    background-color: #2D2D2D;
-    margin: .5em 1em;
-    padding: 1.25em 1.5em;
-    border: 2px solid var(--brightGreen);
-    border-radius: 28px;
   }
 
   .list-header {
@@ -359,12 +361,12 @@
     height: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
+    transition: all 0.1s ease-in-out;
   }
   
   .thoughts-svgs {
     position: relative;
     height: 100%;
-    overflow: none;
   }
   
   .thoughts-svgs img {
@@ -375,8 +377,6 @@
     top: 05%;
     left: -18%; 
     transform: rotate(120deg);
-    
-  
   }
   
   .thoughts-svgs #diag-tube-right {
@@ -405,20 +405,21 @@
   }
   
   .thoughts-svgs #header-tube {
-    width: 42.75%;
-    top: 17%;  /*perfect*/
-    left: 12%;
+    width: 90%;
+    top: 15%; 
+    left: 5%;
     z-index: 300;
     transition: transform 1.0s;
   
   }
   .thoughts-svgs #header-tube-text {
     position: absolute;
-    top: 18%;  /*perfect*/
-    left: 20.5%;
+    top: 14.7%;  
+    left: 0;
+    width: 100%;
     z-index: 500;
   
-    font-size: 280%;
+    font-size: 210%;
     font-weight: 200;
     text-align: center;
   
@@ -429,18 +430,19 @@
   
   .thoughts-blog {
     position: absolute;
-    top: 33%;
+    top: 25%;
+    transition: all 0.1s ease-in-out;
   }
   .blog-adjust {
-    top: 55%;
+    top: 45%;
   }
   
   .blog-post {
     position: relative;
     
-    width: 80%;
+    width: 90%;
     margin: 0 auto 1em auto;
-    padding: 1.5em;
+    padding: 1.5em 1em;
     z-index: 1000;
   
     background-color: #2D2D2D;
@@ -456,8 +458,8 @@
   .post-extender {
     position: absolute;
     top: 17%;
-    left: 3%;
-    font-size: 180%;
+    left: 3.5%;
+    font-size: 170%;
     z-index: 1000;
   }
   
@@ -474,44 +476,53 @@
     height: 75px;
     width: 90%;
     top: 0;
-    left: 6%;
+    left: 10%;
     z-index: 1000;
   }
   .blog-post h2 {
-    display: inline-block;
+    font-size: 90%;
   }
   
   
   .post-title {
+    display: inline-block;
     position: absolute;
   }
   .pt-hide {
-    top: 20%;
-    left: 6%;
+    top: 15%;
+    left: 10%;
   }
   
   .pt-ext {
-    top: 3%;
-    left: 6%;
+    top: 1%;
+    left: 10%;
   }
   
   .sub-title {
     font-weight: 200;
-    font-size: 80%;
+    font-size: 90%;
+    position: absolute;
+    top: 110%
   }
   
   .post-date {
     position: absolute;
+    font-weight: 200;
   }
   .pd-hide {
-    top: 20%;
-    right: 3%;
+    top: 57%;
+    right: 6%;
   }
   .pd-ext {
-    top: 3%;
-    right: 3%;
+    top: 3.75%;
+    right: 6%;
   }
   
+  .post-body {
+    font-size: 80%;
+    line-height: 1.4;
+  }
+
   .pb-hide {
     margin-top: 0;
     height: 0px;
@@ -520,7 +531,7 @@
   }
   
   .pb-ext {
-    margin-top: 3%;
+    margin-top: 7%;
     height: inherit;
     opacity: 1;
     transition: all 0.5s ease-in-out;

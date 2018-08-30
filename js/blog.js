@@ -1,5 +1,7 @@
 const posts = document.querySelectorAll('.blog-post');
 
+// adds bp-anim class to each post every .3 seconds
+// in sequential order
 for(let i = 0; i < posts.length; i++){
   (function(i){
     setTimeout(() => {
@@ -36,7 +38,11 @@ function showPost(id) {
   document.querySelector(`#post-${id} .post-title`).classList.add('pt-ext');
   document.querySelector(`#post-${id} .post-date`).classList.add('pd-ext');
   document.querySelector(`#post-${id} .post-body`).classList.add('pb-ext');
-  document.querySelector(`#post-${id} .post-extender`).style.top = '3%';
+  if (window.innerWidth < 480){
+    document.querySelector(`#post-${id} .post-extender`).style.top = '1%';
+  } else {
+    document.querySelector(`#post-${id} .post-extender`).style.top = '3%';
+  }
   document.querySelector(`#post-${id} .post-extender i`).style.transform = 'rotate(90deg)';
   document.querySelector(`#post-${id} .post-extender i`).style.color = 'var(--brightGreen)';
 };

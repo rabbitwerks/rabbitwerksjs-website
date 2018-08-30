@@ -46,8 +46,6 @@ function animateTubes_IndexThoughts() { // - home page to werks
 
   }, 400);
 
-
-
 }
 
 

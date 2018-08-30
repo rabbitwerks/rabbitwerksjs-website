@@ -10,7 +10,7 @@ const headerTube = document.getElementById('header-tube');
 const headerText = document.getElementById('header-tube-text');
 
 thoughtsLink.addEventListener('click', () => {
-  animateTubes();
+  animateTubes_ProjectsThoughts();
   document.querySelector('.projects').style.animation = 'none';
   document.querySelector('.projects').style.opacity = '1';
   setTimeout(() => {
@@ -22,7 +22,7 @@ thoughtsLink.addEventListener('click', () => {
   }, 1200);
 });
 
-function animateTubes() {
+function animateTubes_ProjectsThoughts() {
   
   //diag tubes
   diagTubeLeft.style.transform = 'rotate(120deg) translate(564px, 155px)';
