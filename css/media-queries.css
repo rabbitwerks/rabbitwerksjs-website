@@ -220,7 +220,7 @@
     text-align: center;
   
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.7);
-    transition: transform 1.0s, opacity 0.4s;
+    transition: all 1s;
   }
   
 
@@ -240,20 +240,20 @@
   }
 
   .werks-svgs #diag-tube-left {
-    top: -16%;
-    left: -20.75%; /*perfect*/
+    top: 10%;
+    left: -60%; /*perfect*/
 
   }
 
   .werks-svgs #diag-tube-right {
-    top: 50%;
-    right: -21.5% /*perfect*/
+    top: -10%;
+    right: -60% /*perfect*/
   }
 
   .werks-svgs #mini-tubes-left {
     width: 85%;
-    top: 20%;
-    left: -10%;
+    top: 17%;
+    left: 7%;
     z-index: 300;
     opacity: 0;
     transition: all 1s;
@@ -297,7 +297,7 @@
   .projects {
     position: absolute;
     z-index: 1000;
-    top: 28%;
+    top: 27%;
 
     opacity: 0;
     animation: fadeUp 0.8s ease-in-out forwards;
@@ -305,7 +305,7 @@
   }
 
   .projects-adjust {
-    top: 55%;
+    top: 45%;
   }
 
   .project-list-group {
@@ -374,31 +374,31 @@
   }
   
   .thoughts-svgs #diag-tube-left {
-    top: 05%;
-    left: -18%; 
+    top: 10%;
+    left: -50%; 
     transform: rotate(120deg);
   }
   
   .thoughts-svgs #diag-tube-right {
-    top: -15%;
-    right: -21.5%;
+    top: 20%;
+    right: -70%;
     transform: rotate(-60deg);
     transform-origin: 30%;
   }
   
   .thoughts-svgs #mini-tubes-left {
-    width: 25%;
+    width: 50%;
     bottom: 5%;
-    left: 1%;
+    left: 45%;
     z-index: 300;
     opacity: 0;
     animation: mtrLongFade ease-in-out 1s forwards;
   }
   
   .thoughts-svgs #mini-tubes-right {
-    width: 25%;
-    top: 10%;
-    right: 2%;
+    width: 50%;
+    top: 12%;
+    left: 5%;
     z-index: 300;
     opacity: 0;
     animation: mtlLongFade ease-in-out 1s forwards;
@@ -458,7 +458,7 @@
   .post-extender {
     position: absolute;
     top: 17%;
-    left: 3.5%;
+    left: 5%;
     font-size: 170%;
     z-index: 1000;
   }
@@ -476,26 +476,27 @@
     height: 75px;
     width: 90%;
     top: 0;
-    left: 10%;
+    left: 13%;
     z-index: 1000;
   }
   .blog-post h2 {
     font-size: 90%;
   }
-  
+  .blog-post h2 span {
+    left: 0;
+  }
   
   .post-title {
     display: inline-block;
     position: absolute;
+    left: 13%;
   }
   .pt-hide {
     top: 15%;
-    left: 10%;
   }
   
   .pt-ext {
     top: 1%;
-    left: 10%;
   }
   
   .sub-title {

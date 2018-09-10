@@ -394,15 +394,14 @@ a.list-link:hover {
 .thoughts-svgs #diag-tube-left {
   top: 05%;
   left: -18%; 
-  transform: rotate(120deg);
-  
+  transform: rotate(120deg) var(--animationDuration);
 
 }
 
 .thoughts-svgs #diag-tube-right {
   top: -15%;
   right: -21.5%;
-  transform: rotate(-60deg);
+  transform: rotate(-60deg) var(--animationDuration);
   transform-origin: 30%;
 }
 
