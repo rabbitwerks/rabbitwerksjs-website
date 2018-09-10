@@ -15,10 +15,18 @@ const ctaBtn = document.getElementById('cta-svg');
 
 
 werksLink.addEventListener('click', () => {
-  animateTubes_IndexProjects();
-  ctaBtn.style.opacity = 0;
+  if (window.innerWidth < 480) {
+    // close the toggle menu first
+    navToggleMenu.classList.toggle('navbar-opened');
+    container.classList.toggle('navbar-toggle-adjust');
+    // run animation function
+    mobile_animateTubes_IndexProjects(); // i-p mobile animation
+  } else {
+    animateTubes_IndexProjects(); // i-p desktop animation
+  }
+  ctaBtn.style.opacity = 0; // only fade out on CTA
   setTimeout(() => {
-    brandDisplay.style.opacity = 0;
+    brandDisplay.style.opacity = 0; // fade out on the brand logo
   }, 800);
   setTimeout(() => { // sudo navigation function
     location.href = 'projects-ui.html'
@@ -26,7 +34,11 @@ werksLink.addEventListener('click', () => {
 });
 
 ctaBtn.addEventListener('click', () => {
-  animateTubes_IndexProjects(); // index to werks animation
+  if (window.innerWidth < 480) {
+    mobile_animateTubes_IndexProjects()
+  } else {
+    animateTubes_IndexProjects(); // index to werks animation
+  }
   animateCta();
   setTimeout(() => {
     brandDisplay.style.opacity = 0;
@@ -73,8 +85,43 @@ function animateTubes_IndexProjects() { // - home page to werks
 
   }, 400);
 
+}
 
+function mobile_animateTubes_IndexProjects() { // - home page to werks
+  
+  // main diagonal tubes
+  diagTubeLeft.style.transform = 'translate(69%, -1.5%)'; // right
+  diagTubeRight.style.transform = 'translate(-69%, -23%)'; //left, up
 
+  // Mini Tube Set left side animation out
+  miniTubesLeft.style.animation = 'none';
+  miniTubesLeft.style.opacity = 1;
+  setTimeout(() => {
+    miniTubesLeft.style.opacity = 0;
+    miniTubesLeft.style.transform = 'translateX(-150px)';
+  }, 50);
+
+  // Mini Tube Set left side animation out
+  miniTubesRight.style.animation = 'none';
+  miniTubesRight.style.opacity = 1;
+  setTimeout(() => {
+    miniTubesRight.style.opacity = 0;
+    miniTubesRight.style.transform = 'translateX(150px)';
+  });
+
+  // header tube and text
+  // headerTube.style.transform = 'translate(0, -375px)';
+  headerTube.style.top = '15%';
+  // headerText.style.transform = 'translate(0, -374px)';
+  headerText.style.opacity = 0;
+  headerText.style.top = '15%';
+  setTimeout(() => {
+    headerText.textContent = "werks and scripts";
+    headerText.style.fontSize = '210%';
+  }, 400);
+  setTimeout(() => {
+    headerText.style.opacity = 1;
+  }, 800)
 }
 
 
