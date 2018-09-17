@@ -1,7 +1,9 @@
-const posts = document.querySelectorAll('.blog-post');
+git add js/const posts = document.querySelectorAll('.blog-post');
 
-// adds bp-anim class to each post every .3 seconds
-// in sequential order
+// adds animate class to each post every 0.3 seconds
+// in sequential order. a for loop that calls an IIFE
+// which sets a timeout for each post, at increasing 
+// durations based on the value of 'i' in the for loop
 for(let i = 0; i < posts.length; i++){
   (function(i){
     setTimeout(() => {
