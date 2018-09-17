@@ -20,6 +20,7 @@
     font-size: 16px;
     color: var(--fontColor);
     line-height: 1.25;
+    height: 100vh;
   }
 
   .container {
@@ -355,10 +356,14 @@
     color: var(--accTeal);
   }
 
-
+  /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+  /*|```````````````````````````|*/
+  /*|   ||THOUGHTS PAGE MOBILE     |*/
+  /*|...........................|*/
+  /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 
   .thoughts {
-    height: 100%;
+    height: 100vh;
     overflow-x: hidden;
     overflow-y: hidden;
     transition: all 0.1s ease-in-out;
@@ -471,9 +476,10 @@
     color: var(--brightGreen);
   }
   
+  /* invisible header element to handle click event */
   .post-header {
     position: absolute;
-    height: 75px;
+    height: 50px;
     width: 90%;
     top: 0;
     left: 13%;
@@ -492,30 +498,31 @@
     left: 13%;
   }
   .pt-hide {
-    top: 15%;
+    top: 16%;
   }
   
   .pt-ext {
-    top: 1%;
+    top: .5rem;
   }
   
   .sub-title {
     font-weight: 200;
     font-size: 90%;
     position: absolute;
-    top: 110%
+    top: 100%;
   }
   
   .post-date {
     position: absolute;
     font-weight: 200;
+    transition: all 0.2s;
   }
   .pd-hide {
-    top: 57%;
+    top: 1.55rem;
     right: 6%;
   }
   .pd-ext {
-    top: 3.75%;
+    top: 1.5rem;
     right: 6%;
   }
   
@@ -538,7 +545,7 @@
     transition: all 0.5s ease-in-out;
   }
   
-
+  
 
  
 }

@@ -38,7 +38,6 @@
 
 
 html, body {
-  height: 100%;
   font-family: 'Raleway', sans-serif;
   font-size: 24px;
   color: var(--fontColor);
@@ -46,6 +45,7 @@ html, body {
 }
 
 body {
+  height: 100%;
   background-color: var(--backgroundGrey);
   z-index: 10;
 
@@ -540,7 +540,17 @@ a.list-link:hover {
   transition: all 0.5s ease-in-out;
 }
 
+.post-body a {
+  text-decoration: none;
+  color: var(--mainTurq);
+}
+.post-body a:hover {
+  color: var(--brightGreen);
+}
 
+.post-body .code-snip {
+  font-family: monospace;
+}
 
 
 
