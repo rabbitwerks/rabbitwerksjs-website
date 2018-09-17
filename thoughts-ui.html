@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>RabbitWerks : Main</title>
+  <title>RabbitWerks : Thoughts</title>
   <link rel="stylesheet" href="vendor/css/font-awesome/css/all.css"> <!--font awesome icon set-->
   <link rel="stylesheet" href="css/main-ui.css">
   <link rel="stylesheet" href="css/media-queries.css">
@@ -51,30 +51,51 @@
 
     <div class="thoughts-blog" id="blog">
     
+      <div class="blog-post" id="post-004" data-post-id="004">
+        <span class="post-extender"><i class="fa fa-angle-right"></i></span>
+        <div class="post-header"></div>
+        <h2 class="post-title pt-hide">Mozilla DevTool Tips Mini-Series | <span class="sub-title">the first's of many videos</span></h2>
+        <h2 class="post-date pd-hide">9-10-18</h2>
+        <p class="post-body pb-hide">
+         One of my goals in setting off on this js adventure was to start making video content. Whether that be tutorials, a vlog, live stream coding, or a combination of all of the above, video content was the goal. Youtube has been a great resource of learning of me during this time, and ultimately I want to be able to give back in some way that might benefit others in javascript, and in life.
+         <br><br>
+         Well this week I am starting to see that goal come to light! Very exciting! I have been creating a mini-series of demonstration videos for various features in the Mozilla DevTools inside Firefox Quantum. I find these features to be incredibly handy and useful in my day to day development. If you haven't experinced the power that is Moz DevTools, then i hope by the end of this post, and video series, you'll be itchin' to give them a try!
+         <br><br>
+         Now, don't get me wrong, Google's Devtools are really great and a lot of times that's just what I end up running through. But for best measure, ill just have both browsers rockin' anyway. The moz devtools really shine when it comes to next-gen CSS. A few awesome feautres include the mighty CSS Grid Viewer, it gives you a visual representation of your css grid tracks and gaps, along with some built in tools for css grid. You can select and edit different areas of your grids and even save those changes to your css files.
+         <br><br>
+         If that's not enough right there to make you want to check it out, then some other features might peak your interest more. These features include Animation Inspector, Font-Controller, Style Editor, JS Scratchpad, Canvas Debugger, Web-Audio Tools, Shader-Editor for WebGL, Accessability Inspector and more. Of course, you will also find your standard Markup Inspector, Console, and Debugger, yet even these are incredibly powerful!
+         <br><br>
+         Mozilla is on the fore-front of the web development world, so it's no surprise that their DevTools are on the cutting edge as well. Head over to Mozilla's website today and start using the devtools of tomorrow! Also, make sure to come check out the RabbitWerks youtube channel for a demonstration of many of these features.
+         <br><br>
+         <a href="#">Mozilla DevTools Mini-Series</a> | <a href="#">Mozilla Firefox Developer Edition</a>
+        </p>
+      </div>
+
       <div class="blog-post" id="post-003" data-post-id="003">
         <span class="post-extender"><i class="fa fa-angle-right"></i></span>
         <div class="post-header"></div>
         <h2 class="post-title pt-hide">Take a Glimpse under the Hood | <span class="sub-title">website interwerkings</span></h2>
-        <h2 class="post-date pd-hide">8-14-18</h2>
+        <h2 class="post-date pd-hide">9-10-18</h2>
         <p class="post-body pb-hide">
           I have been working on my javascript website for a little over three months now. The idea was to build something simple, but also something that sticks in your mind! Its always a challenge I love to take on. One of the hardest things to overcome sometimes is just an empty text file. A blank canvas. Sometimes you just need to start throwing paint on it until it starts to take shape.
           <br><br>
           I went into this idea with only one main objective in mind. Showcase my Javascript capabilities. Without going overboard... Which can be very easy to do. I wanted to make is almost feel like a Single Page App, at least the main site, where the dom elements are just changing and you dont have to navigate between a ton of idfferent pages.
           <br><br>
-          A few different methods went into work to make this happen. First I had to create "sudo" navigation links. What do I mean by "sudo" nav links? Well instead of using the default behavior on anchor tag links, I handled that in Javascript, by setting a timeout to allow for the SVG animations to play out, then re-assigning the value of the 'window.location.pathname' property to the target page. Another element is the animations of the background SVGs. On each page change, the svgs animate their position and rotation, to achieve the positions of their respective selves on the page being loaded.
+          A few different methods went into work to make this happen. First I had to create "sudo" navigation links. What do I mean by "sudo" nav links? Well instead of using the default behavior on anchor tag links, I handled that in Javascript, by setting a timeout to allow for the SVG animations to play out, then re-assigning the value of the <span class="code-snip">'window.location.pathname'</span> property to the target page. Another element is the animations of the background SVGs. On each page change, the svgs animate their position and rotation, to achieve the positions of their respective selves on the page being loaded.
           <br><br>
-          To achieve these animations, I used a combination of CSS rules to manage timing, delay and certain display propeties, while using javascript to modify the actual rotational degree and positioning of each SVG element. Using simple element.style.transition = 'translate(xVal%, yVal%)' statements along with the transition timing rules, we can create smooth flowing animations that get triggered on an event or when your animation function runs.
+          To achieve these animations, I used a combination of CSS rules to manage timing, delay and certain display propeties, while using javascript to modify the actual rotational degree and positioning of each SVG element. Using simple <span class="code-snip">element.style.transition = 'translate(xVal%, yVal%)'</span> statements along with the transition timing rules, we can create smooth flowing animations that get triggered on an event or when your animation function runs.
           <br><br>
           These actions all play a vital role in giving the user the sense that they are staying on the same page and the content is changing. These types of projects can often be referred to as SPA's, or Single Page Apps. SPA's try to mimic the feel of using a native built app, while still being in the browser. A very powerful and in-demand concept in web development right now.
           <br><br>
           Although RabbitWerks is in fact three seperate html pages, didn't take away from the fact that I want to bring my users a seemless, cohesive, memorable experince in every way that I can. 
         </p>
       </div>
+
       <div class="blog-post" id="post-002" data-post-id="002">
         <span class="post-extender"><i class="fa fa-angle-right"></i></span>
         <div class="post-header"></div>
         <h2 class="post-title pt-hide">How the Rabbit got its Hops Pt. 2 | <span class="sub-title">my origin story</span></h2>
-        <h2 class="post-date pd-hide">8-14-18</h2>
+        <h2 class="post-date pd-hide">9-7-18</h2>
         <p class="post-body pb-hide">
           Which brings me to the present. I had been carrying on from one customer service job to the next, and all the while feeling like my potential was so much more. But i didn't have a clear heading on which way to go. I took a job in construction as a brickmason laborer and found out after a year of hauling brick, that again, I felt I could be doing so much more. 
           <br><br>
@@ -86,11 +107,12 @@
           Javascript. Its pretty amazing to me. Amazing enough to quit that brickmason job and immerse myself in everything JS development and programming in general. I have been doing freelance web design to pay the bills, but Javascript is where my passion lies…
         </p>
       </div>
+
       <div class="blog-post" id="post-001" data-post-id="001">
         <span class="post-extender"><i class="fa fa-angle-right"></i></span>
         <div class="post-header"></div>
         <h2 class="post-title pt-hide">How the Rabbit got its Hops Pt. 1 | <span class="sub-title">my origin story</span></h2>
-        <h2 class="post-date pd-hide">8-13-18</h2>
+        <h2 class="post-date pd-hide">9-6-18</h2>
         <p class="post-body pb-hide">
           My initial encounter with anything web design was Yahoo! Geo-Cities. They offered a free website builder. Must have, cause i was only in 6th grade. It didnt amount to much overall, but it was fun to play around and see what I could make on the screen. After which, my next run-in was in age of Myspace, and being in a punk-rock band in high school, we needed an awesome myspace design to accompany are rough and ragged sound.
           <br><br>
@@ -99,11 +121,12 @@
           Sadly, I never got to experience the wonder of Javascript at this point. That would have been way over our heads, anyway. As well as discovering that graphic design wasn't what I thought it would be.. Bad client expereiences, and a stolen laptop with all my college work and software. GONE. I never quite really bounced back from that as far as graphic design, and ended up needing to just find work at this point, graphic design, and anything web got put on the back burner for the long haul....
         </p>
       </div>
+
       <div class="blog-post" id="post-000" data-post-id="000">
         <span class="post-extender"><i class="fa fa-angle-right"></i></span>
         <div class="post-header"></div>
           <h2 class="post-title pt-hide">Welcome to RabbitWerks | <span class="sub-title">my first blog post</span></h2>
-          <h2 class="post-date pd-hide">8-10-18</h2>
+          <h2 class="post-date pd-hide">9-3-18</h2>
         
         <p class="post-body pb-hide">
             Hey everyone, and welcome to Rabbit Thoughts, otherwise known as my Javascript blog. Let me just take the time to say that if you're reading this, THANK YOU! YOU ARE AWESOME!! Now then, onwards and forwards. In this blog I will be talking about the various Werks and projects I have in motion. As well as any and all things I may come across on my adventures through Javascript.
