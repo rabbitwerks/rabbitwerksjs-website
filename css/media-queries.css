@@ -485,7 +485,7 @@
     left: 13%;
     z-index: 1000;
   }
-  .blog-post h2 {
+  .blog-post h2.post-title {
     font-size: 90%;
   }
   .blog-post h2 span {
@@ -507,15 +507,17 @@
   
   .sub-title {
     font-weight: 200;
-    font-size: 90%;
+    font-size: 80%;
     position: absolute;
     top: 100%;
+    width: 270%;
   }
   
   .post-date {
     position: absolute;
     font-weight: 200;
     transition: all 0.2s;
+    font-size: 80%;
   }
   .pd-hide {
     top: 1.55rem;

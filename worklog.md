@@ -101,6 +101,14 @@ once a day? just put the whole series up in a week. probably not a bad idea. goo
 - going to do a live code along / tutorial style?
 
 
+
+---------------------------------------------
+## 10-7-18
+
+### Adding script to pull blog from blogger
+
+
+
 # ++++++++++++++++++++++++++++++++++++
 # TO-DO
 

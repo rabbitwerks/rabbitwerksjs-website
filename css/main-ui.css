@@ -42,10 +42,10 @@ html, body {
   font-size: 24px;
   color: var(--fontColor);
   line-height: 1.25;
+  height: 100%;
 }
 
 body {
-  height: 100%;
   background-color: var(--backgroundGrey);
   z-index: 10;
 
