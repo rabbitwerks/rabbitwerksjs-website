@@ -1,9 +1,4 @@
 
-const API_KEY = 'AIzaSyAKLL2JvNo8mLgH9GqlEkB9JPKN9-Pw-ew';
-
-const userId = '16179518082151825482'
-
-const blogId = '1909841251606783944'
 
 blogPosts = []
 
